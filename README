@@ -16,3 +16,4 @@ After creating the components, we have to handle the security groups :
 After setting up the whole architecture, we can now connect to Instance1 using Putty(after converting the keypair extension).
 Then we have to send this keypar to Instance1 ( in order to be able to connect to Instance3 ), we use WINSCP for this matter.
 Finally, we can connect to Instance3 from Instance1 still using Putty, and we are able to ping google.com
+(NAT is used to allow the private subnet to access internet, if no private subnet, no NAT needed) . Public instance uses the internet gateway to access internet.
